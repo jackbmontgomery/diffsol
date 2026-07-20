@@ -374,6 +374,9 @@ pub use linear_solver::KLU;
 #[cfg(feature = "diffsl")]
 pub use ode_equations::diffsl::{DiffSl, DiffSlContext};
 
+#[cfg(feature = "stablehlo")]
+pub use ode_equations::stablehlo::{StableHloEquations, StableHloScalar};
+
 pub use diffsol_la::{
     DefaultSolver, DenseMatrix, FaerMat, FaerSparseMat, Matrix, MatrixCommon, NalgebraMat,
 };

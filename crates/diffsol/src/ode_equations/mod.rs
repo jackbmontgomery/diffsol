@@ -10,6 +10,8 @@ pub mod adjoint_equations;
 #[cfg(feature = "diffsl")]
 pub mod diffsl;
 pub mod sens_equations;
+#[cfg(feature = "stablehlo")]
+pub mod stablehlo;
 pub mod test_models;
 
 #[derive(Clone, Debug, Serialize)]
